@@ -14,13 +14,13 @@ public class PLanguage : IComparable<PLanguage>
 
         return name1.CompareTo(name2);
     }
-    public int CompareTo(PLanguage comparePart)
+    public int CompareTo(PLanguage compareYear)
     {
-        if (comparePart == null)
+        if (compareYear == null)
             return 1;
 
         else
-            return this.Year.CompareTo(comparePart.Year);
+            return this.Year.CompareTo(compareYear.Year);
     }
 }
 public class Example
